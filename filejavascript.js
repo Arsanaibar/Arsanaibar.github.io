@@ -9,7 +9,7 @@ document.getElementById('form').addEventListener('submit',(event)=>
 
         if (usernamenya == username && passwordnya == password){
             alert('selamat datang')
-            window.location.href = "index.html"
+            window.location.href = "home.html"
 
         } else {
             alert('username atau password anda salah!')
