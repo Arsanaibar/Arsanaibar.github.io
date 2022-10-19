@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="styleedashboard.css">
+    <title>Contact</title>
+</head>
+<body>
+<section id="contact">    
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><img src="bahan/programmer.png" alt=""></div>
+                <div class="menu">
+                    <ul>
+                      <li><a href="index.html">Homepage</a></li>
+                      <li><a href="dashboard.html">Dashboard</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="about.html">Biodata</a></li>
+                      <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<div class="cons"> 
+    <div class="login">
+        <form action="#" method="post" id="forms">
+          <h2>Contact Me</h2>
+          <div class="input-group">
+            <input placeholder="nama" type="text" id="username">
+          </div>
+          <div class="input-group">
+            <input placeholder="email" type="email" id="email">
+          </div>
+          <div class="input-group">
+            <textarea name="lol" id="lol" cols="30" rows="10"></textarea>
+          </div>
+          <div class="input-group">
+            <a href="mailto:arsan05062003@gmail.com"><button onclick="testing()" class="subb" id="percobaan" type="submit"> kirim </a>
+          </div>
+        </form>
+    </div>
+</div>  
+</section>    
+<script>
+  function testing () {
+    alert('Anda berhasil mengirim pesan')
+  }
+
+</script>  
+<!-- <script>
+  document.getElementById('forms').addEventListener('submit',(event)=>
+{
+    let username = document.getElementById('username').value
+    let email = document.getElementById('email').value
+    event.preventDefault()
+
+    let usernamenya = ""
+    let emailnya = "arsan05062003@gmail.com"
+
+        if (usernamenya == username && emailnya == email){
+            alert('selamat datang')
+            window.EventTarget('subb')
+
+        } else {
+            alert('username atau password anda salah!')
+        }
+})
+</script> -->
+</body>
+</html>

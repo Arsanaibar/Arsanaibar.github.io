@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleedashboard.css">
+    <title>ENSIKLOPEDIA NGODING</title>
+</head>
+
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><img src="bahan/programmer.png" alt=""></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">Biodata</a></li>
+                        <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <div class="hal1">
+        <img class="gam" src="bahan/programmer.png" alt="">
+        <h2>Haloo selamat datang</h2>
+    </div>
+    <div class="hal1">
+        <form action="" method="post" id="form">
+            <input autocomplete="off" placeholder="Cari" id="search" type="text">
+            <button class="sub" type="submit">submit</button>
+            <button id="sub" type="reset" >hapus</button>
+        </form>
+    </div>
+   <div class="ensiklopedia"> 
+        <div class="java" id="java">
+            <p>Java dikenal dengan moto “Write Once, Run Anywhere” yang memiliki arti bahwa Java adalah bahasa pemrograman yang mampu dijalankan di berbagai platform tanpa perlu penyesuaian ulang di platformnya. Contohnya, dapat dijalankan di Android, Linux, Windows, dan lain-lain..</p>
+        </div>
+        <div class="javascript" id="javascript">
+            <p>JavaScript atau kita singkat menjadi JS merupakan bahasa pemrograman jenis interpreter, sehingga kamu tidak memerlukan compiler untuk menjalankannya. JavaScript memiliki fitur-fitur seperti berorientasi objek, client-side, high-level programming, dan loosely typed..</p>
+        </div>
+        <div id="variabel" class="variabel">
+            <p>Variabel adalah suatu tempat yang digunakan untuk menampung tipe data di memori</p>
+        </div>
+    </div>
+    <div class="scroll">
+        <a onclick="alarm()" href=""><img class="scrollicon" src="expand-button.png" alt=""></a>
+    </div>
+
+    <script>
+        function alarm(){
+            alert('nama saya arsan NIM 210210501033')
+        }
+
+         document.getElementById('sub').addEventListener('click', function(event) {
+            event.preventDefault()
+            document.getElementById('javascript').style.display="none"
+        })
+        document.getElementById('form').addEventListener('submit', function (event) {
+
+
+            event.preventDefault()
+            let key = document.getElementById('search').value
+            console.log(key);
+            if ( key == "javascript" ){
+                document.getElementById('javascript').style.display="flex" 
+            }
+        })
+
+        document.getElementById('sub').addEventListener('click', function(event) {
+            event.preventDefault()
+            document.getElementById('java').style.display="none"
+        })
+        document.getElementById('form').addEventListener('submit', function (event) {
+
+
+            event.preventDefault()
+            let key = document.getElementById('search').value
+            console.log(key);
+            if ( key == "java" ){
+                document.getElementById('java').style.display="flex" 
+            }
+        })
+        
+        document.getElementById('sub').addEventListener('click', function(event) {
+            event.preventDefault()
+            document.getElementById('variabel').style.display="none"
+        })
+        document.getElementById('form').addEventListener('submit', function (event) {
+
+
+            event.preventDefault()
+            let key = document.getElementById('search').value
+            console.log(key);
+            if ( key == "variabel" ){
+                document.getElementById('variabel').style.display="flex" 
+            }
+        })
+        
+        // }
+        // document.getElementById('form').addEventListener('submit', (event) => {
+        //     let search = document.getElementById('search').value
+        //     let searchnya = "java"
+        //     if (searchnya == search) {
+        //         alert('selamat datang')
+
+        //     } else {
+        //         alert('kata kunci yang anda masukkan salah!')
+
+        //     }
+        // })
+    </script>
+    
+</body>
+
+</html>
